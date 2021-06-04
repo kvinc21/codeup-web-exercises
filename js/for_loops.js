@@ -1,3 +1,4 @@
+//alert("practing for loops")
 
 function showMultiplicationTable (x) {
     for (let index = 1; index < 10; index++) {
