@@ -2,10 +2,12 @@
     "use strict";
 
     /**
-     * TODO:
+
      * Create an array of 4 people's names and store it in a variable called
      * 'names'.
      */
+ let names = ["Kenneth", "Rob", "Joe", "Mary"];
+    console.log(names);
 
     /**
      * TODO:
