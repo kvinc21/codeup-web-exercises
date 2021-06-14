@@ -32,7 +32,7 @@ person.sayHello = "Hello from " + person.firstName + person.lastName + "!";
 
     console.log(person.sayHello)
 
-    /** TODO:
+    /**
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
      * discount. Write a JS program, using conditionals, that logs to the
