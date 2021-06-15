@@ -9,9 +9,23 @@ body, html {
 .message{
     border: solid lightgray 1px;
     margin: 5px;
+    padding: 5px;
 }
 
 .message-info {
     background-color: lightblue;
     color: blue;
+}
+
+.message-success{
+    background-color: lightgreen;
+    color: green;
+}
+.message-warning {
+    background-color: #bbbb52;
+    color: #ecec5e;
+}
+
+.message-error{
+    background-color: pink;
 }
