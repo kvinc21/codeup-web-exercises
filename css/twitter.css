@@ -96,5 +96,10 @@ top: 75px;
 }
 .media {
     width: 100%;
+    background-color: #fcfafa;
+    border-bottom: .1em;
+    padding: .5em;
+    overflow: auto;
+   margin-block: 50%;
 
 }
