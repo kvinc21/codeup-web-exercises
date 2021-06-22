@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+
+
+}
+body {
+    margin: 0;
+
+}
+nav {
+    background: gray;
+}
+.nav-items{
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Verdana;
+    display: inline-block;
+}
+nav a:hover {
+    background: blue;
+}
+.nav-link{
+    align-self: center;
+}
+
+.nav-link > a{
+    padding: 0 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
