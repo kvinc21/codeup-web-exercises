@@ -74,9 +74,28 @@ person.sayHello = "Hello from " + person.firstName + person.lastName + "!";
      */
 
 
+    let books = [
+        { title: "The Salmon of Doubt", author: { firstName: "Douglas", lastName: " Adams"}},
+        { title: "Walkaway", author: { firstName: "Cory", lastName: " Doctorow"}},
+        { title: "A Brief History of Time", author: {firstName: "Stephen", lastName: " Hawking"}},
+        { title: "Potty Training", author: {firstName: "Dad", lastName: " Mom"}},
+        { title: "Just Keep Swimming", author: {firstName: "Walt", lastName: " Disney"}},
+
+
+    ]
+    console.log(books[0].title)
+    console.log( books[0].author.firstName + books[0].author.lastName)
+    console.log(books[1].title)
+    console.log(books[1].author.firstName + books[1].author.lastName)
+    console.log(books[2].title)
+    console.log(books[2].author.firstName + books[2].author.lastName)
+    console.log(books[3].title)
+    console.log(books[3].author.firstName + books[3].author.lastName)
+    console.log(books[4].title)
+    console.log(books[4].author.firstName + books[4].author.lastName)
 
     /**
-     * TODO:
+     *
      * Loop through the books array and output the following information about
      * each book:
      * - the book number (use the index of the book in the array)
