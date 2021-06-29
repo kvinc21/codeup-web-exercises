@@ -47,11 +47,20 @@ person.sayHello = "Hello from " + person.firstName + person.lastName + "!";
      */
     var shoppers = [
         {name: 'Cameron', amount: 180},
-        {name2: 'Ryan', amount2: 250},
-        {name3: 'George', amount3: 320}
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
     ];
-    for ()
-    /** TODO:
+    shoppers.forEach (function (shopper){
+        if (shopper.amount <= 200){
+            let amount = shopper.amount;
+            console.log(shopper.name + " owes $" + amount.toFixed(1/10))
+        } else {
+            let discount = shopper.amount * .12;
+            let amount = shopper.amount - discount;
+            console.log(shopper.name + " spent a total of $" + shopper.amount + ", he gets a discount of $" + amount.toFixed(shopper.amount * .12)+ " new total is $" + amount.toFixed(.12));
+        }
+    })
+    /**
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
      * property. The author property should be an object with properties
@@ -63,6 +72,8 @@ person.sayHello = "Hello from " + person.firstName + person.lastName + "!";
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+
 
     /**
      * TODO:
