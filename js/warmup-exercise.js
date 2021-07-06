@@ -6,7 +6,7 @@
 
 function capitalizeAllNames() {
     var names = ["bob", "seth", "tofu", "toyota"];
-    return names.map(a => a.toUpperCase());
+    console.log(names.map(a => a.toUpperCase()));
 }
 
 // TODO: Create a function named capitalizeFirstLetter that accepts an array of strings and returns the array with all of the first letters in
