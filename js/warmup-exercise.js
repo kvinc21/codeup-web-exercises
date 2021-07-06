@@ -14,7 +14,7 @@ function capitalizeAllNames() {
 // Example:  capitalizeFirstLetter(["bob","Seth","TOFU","Toyota"]) ---- returns ----> ["Bob","Seth","Tofu","Toyota"]
 
 function capitalizeFirstLetter() {
-    var names = ["bob", "seth", "tofu", "toyota"];
-    var letter = names[0].toUpperCase();
-    return names;
+    let names = ["bob", "seth", "tofu", "toyota"];
+    let letter = names[0].toUpperCase();
+    console.log(letter);
 }
