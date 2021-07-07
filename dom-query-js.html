@@ -24,27 +24,34 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-
 <script>
+
+
     (function () {
         "use strict";
-        // TODO: Uncomment next line and get the main header element by id
+            <button id="main-header">Main Header</button>;
+            <button id="sub-header">Sub Header</button>;
+            <button id="list-paragraph">List Items</button>;
+            <button id="sub-paragraph">Sub Paragraph</button>;
+
+        //  Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById("main-header");
 
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+        //  Set inner html of mainHeader to "JavaScript is Cool"
         var mainHeader = document.getElementById("main-header").innerText = "JavaScript is Cool"
 
-        // TODO: Uncomment the next line and get the sub header element by id
+        mainHeaderButton.addEventListener("click", )
+        //  Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById("sub-header");
 
-        // TODO: Set the text color of subHeader to blue
+        //  Set the text color of subHeader to blue
         subHeader.style.color = ("blue");
 
-        // TODO: Uncomment the next line and get all list items
+        //  Uncomment the next line and get all list items
         var listItems = document.querySelectorAll("li");
 
-        // TODO: Set text color on every other list item to grey
-        // TODO: Set text color of li with dbid = 1 to blue
+        //  Set text color on every other list item to grey
+        //  Set text color of li with dbid = 1 to blue
 
         for (var i = 0; i < listItems.length; i += 2) {
            listItems[i].style.color = "grey";
@@ -56,12 +63,13 @@
             }
         }
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+        //  Uncomment the next line and get all elements with class name sub-paragraph
          var subParagraphs = document.querySelector(".sub-paragraph");
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        //  Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs.innerHTML= "Mission Accomplished!"
-    })();
+    }
+    )();
 </script>
 </body>
 </html>
