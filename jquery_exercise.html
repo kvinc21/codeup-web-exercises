@@ -6,18 +6,34 @@
 </head>
 <body>
 
-<h1><b>Free styling Jquery</b></h1>
+<h1 id="free-styling"><b>Free styling Jquery</b></h1>
 
-<div class=""
+<div class="row col">
+  <ul class="travel-list"><a>Travel Bound </a>
+      <li class="codeup"><a href="#">Malta</a> </li>
+      <li class="codeup"><a href="#">Greece</a> </li>
+      <li class="codeup"><a href="#">Swiss</a> </li>
+  </ul>
 
+  <ul class="food-list"><a>Food options</a>
+      <li class="my-list"><a href="#"> Unsure</a> </li>
+      <li class="my-list"><a href="#"> Fish & Peta </a> </li>
+      <li class="my-list"><a href="#"> Chocolate</a> </li>
+  </ul>
 </div>
 
-<script src="./js/jquery-2.2.4.js"></script>
+<script src="js/jquery-2.2.4.js"></script>
 <script>
-    $(document).ready(function () {
-        // alert("DOM has finished loading")
-    })
+    $(document).ready(function() {
+        alert( 'The DOM has finished loading!' );
+
+        $('.codeup').css('border', 'solid 1px red ');
+
+        $('li').css('font-size', '20px');
+
+    });
 </script>
+
 
 
 </body>

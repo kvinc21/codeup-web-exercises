@@ -113,7 +113,7 @@ function getTallUser(arrayofObjects) {
     }
     return tallUser
 }
-console.log(getTallUser(people));
+console.log(getTallUser(people));}
 
 
 
