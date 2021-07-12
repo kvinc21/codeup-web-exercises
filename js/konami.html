@@ -6,13 +6,38 @@
 <body>
 <h1>Konami Code</h1>
 
-<script src="/js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<p>Please type something into this form:</p>
+<form>
+  <input type="text" id="textfield" name="textfield" placeholder="Type Here"/>
+</form>
+
 <script>
   "use strict";
+$(document).ready(function () {
 
+  var addedLives = "";
+
+  function keyInput(event) {
+
+    moreLives += event.key;
+    var keySequence = (moreLives.includes(""));
+    console.log(moreLives)
+    if (keySequence){
+      moreLives = "";
+      alert("You have added 30 lives!");
+    }
+  }
+})
   $(document).keyup(function(event){
     console.log(event.keyCode);
   });
+
+
+
+
 </script>
 </body>
 </html>
+<!--Up, Up, Down, Down, Left, Right, Left, Right, B, A-->
