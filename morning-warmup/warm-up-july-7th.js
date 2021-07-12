@@ -22,7 +22,7 @@ var personTwo = {
     lastName: "valdarez",
     ageInYears: 61,
     heightInInches: 73,
-    getNicelyFomattedFullName" "
+
 }
 console.log()
 
