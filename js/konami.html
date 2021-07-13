@@ -17,15 +17,15 @@
   "use strict";
 $(document).ready(function () {
 
-  var addedLives = "";
+  var addedLives = [38,38,40,40,37,39,37,39,66,65];
 
   function keyInput(event) {
 
-    moreLives += event.key;
-    var keySequence = (moreLives.includes(""));
-    console.log(moreLives)
+    addedLives += event.key;
+    var keySequence = (addedLives.includes(""));
+    console.log(addedLives)
     if (keySequence){
-      moreLives = "";
+      addedLives = "";
       alert("You have added 30 lives!");
     }
   }
