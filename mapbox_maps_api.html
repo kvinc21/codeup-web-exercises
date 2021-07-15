@@ -14,8 +14,20 @@
     mapboxgl.accessToken = mapboxAPIKey;
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
+        style: 'mapbox://styles/mapbox/streets-v11',
+        zoom: 10,
+        center: [-80.19343802075878, 25.802069713391482]
     });
+
+    var miamiPopup = new mapboxgl.Popup()
+        .setLngLat([-80.20006, 25.79993])
+        .setHTML("<p>Good Food & Good Drinks</p>")
+        .addTo(map);
+
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-80.19343802075878, 25.802069713391482])
+        .addTo(map);
+    marker.setPopup(miamiPopup);
 
 </script>
 
