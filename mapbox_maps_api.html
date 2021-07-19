@@ -10,7 +10,9 @@
 <body>
 <div id='map' style='width: 90vw; height: 90vw;'></div>
 <script src="./js/keys.js"></script>
+<script src="./js/mapbox-geocoder-utils.js"></script>
 <script>
+
     mapboxgl.accessToken = mapboxAPIKey;
     var map = new mapboxgl.Map({
         container: 'map',
@@ -19,14 +21,36 @@
         center: [-80.19343802075878, 25.802069713391482]
     });
 
-    var marker = new mapboxgl.Marker({ draggable:true})
-        .setLngLat([-80.19343802075878, 25.802069713391482])
+    var marker = new mapboxgl.Marker({draggable: true})
+        .setLngLat([-80.20002, 25.80005])
         .addTo(map);
 
     var miamiPopup = new mapboxgl.Popup()
-        .setLngLat([-80.20006, 25.79993])
-        .setHTML("<p>Good Food & Good Drinks</p>")
+        .setLngLat([-80.20002, 25.80005])
+        .setHTML("<p>Crudos Fusion Art</p>")
         .addTo(map);
+
+    var restaurants = [
+        {
+            name: "Wajiro's Restaurant",
+            address: "12670 SW 8th St, Miami, FL 33184"
+        },
+        {
+            name: "Code Wise",
+            address: "1701 NW 112th Ave Unit 104, Miami, FL 33172"
+
+        },
+        {
+            name: "Verde",
+            address: "1103 Biscayne Blvd, Miami, FL 33132"
+
+    }];
+    
+    restaurants.forEach(function (restaurant) {
+        geocode(restaurant.address, mapboxAPIKey).then(function () {
+            
+        });
+    })
 
     marker.setPopup(miamiPopup);
 
