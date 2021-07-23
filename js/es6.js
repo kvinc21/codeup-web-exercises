@@ -31,7 +31,7 @@ const users = [
 
 //  fill in your name and email and add some programming languages you know
 // to the languages array
-// TODO: replace the `var` keyword with `const`, then try to reassign a variable
+//  replace the `var` keyword with `const`, then try to reassign a variable
 // declared as `const`
 const name = `Kenneth Vincent`;
 const email = `kenneth.j.vincent1@gmail.com`;
@@ -57,7 +57,7 @@ users.forEach(function (user) {
 });
 
 //  replace `var` with `let` in the following declaration
-var developers = [];
+let developers = [];
 users.forEach(function (user) {
     // TODO: rewrite the code below to use object destructuring assignment
     //       note that you can also use destructuring assignment in the function
