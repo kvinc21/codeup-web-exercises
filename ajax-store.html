@@ -25,30 +25,37 @@
 <script>
     "use strict";
 
-    $(document).ready(function () {
+    (function () {
         "use strict";
-        // TODO: Create an AJAX GET request for the file under data/inventory.json
+        // : Create an AJAX GET request for the file under data/inventory.json
 
-        $.ajax({
-            url: "data/inventory.json",
-            type: "GET",
-            data: {
+        getData();
 
-            }
-        }).done(function (data) {
-          alert("Checked Inventory")
-        })
-    });
+        function getData() {
 
-    // for (let i = 0; i < data.length; i++) {
-    //   var currentUser = data[i]
-    // }
+        $.ajax("data/inventory.json").done(function (data) {
+                var html = "";
+                $('#insertProducts').empty();
+                data.forEach(function (tool) {
+                    html = `<tr>
+                            <td>${tool.title}</td>
+                            <td>${tool.quantity}</td>
+                            <td>${tool.price}</td>
+                            <td>${tool.categories}</td>
+                            </tr>`;
+                    $('#insertProducts').append(html);
+                })
 
-    // TODO: Take the data from inventory.json and append it to the products table
-    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-    //             its contents and fields
-    //       HINT: You will want to target #insertProducts for your new HTML elements
-    // })();
+            }).fail(function (error) {
+                alert("Error object:" + error);
+            })
+        }
+
+        setInterval(getData, 3000);
+        $('#refresh').click(getData);
+    })();
+
+
 </script>
 
 </body>
