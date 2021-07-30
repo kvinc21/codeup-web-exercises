@@ -21,15 +21,6 @@
         center: [-80.19343802075878, 25.802069713391482]
     });
 
-    var marker = new mapboxgl.Marker({draggable: true})
-        .setLngLat([-80.20002, 25.80005])
-        .addTo(map);
-
-    var miamiPopup = new mapboxgl.Popup()
-        .setLngLat([-80.20002, 25.80005])
-        .setHTML("<p>Crudos Fusion Art</p>")
-        .addTo(map);
-
     var restaurants = [
         {
             name: "Wajiro's Restaurant",
@@ -44,17 +35,43 @@
             name: "Verde",
             address: "1103 Biscayne Blvd, Miami, FL 33132"
 
-    }];
-    
+        }];
+
+    var marker = new mapboxgl.Marker({draggable: true})
+        .setLngLat([-80.20002, 25.80005])
+        .addTo(map);
+
+    var miamiPopup = new mapboxgl.Popup()
+        .setLngLat([-80.20002, 25.80005])
+        .setHTML("<p>Crudos Fusion Art</p>")
+        .addTo(map);
+
+
+
     restaurants.forEach(function (restaurant) {
-        geocode(restaurant.address, mapboxAPIKey).then(function () {
-            
+        geocode(restaurant.address, mapboxAPIKey).then(function(coordinates) {
+
+            var marker = new mapboxgl.Marker()
+                .setLngLat(coordinates)
+                .addTo(map);
+
+            var popup = new mapboxgl.Popup()
+                .setHTML(restaurant.name)
+
+            marker.setPopup(popup)
         });
     })
-
     marker.setPopup(miamiPopup);
 
+    var zoomSelect = document.getElementById('zoom-select');
+    console.log(zoomSelect);
 
+    zoomSelect.addEventListener('change', function(){
+        console.log('Zoom level change.');
+        var zoomValue = zoomSelect.options[zoomSelect.selectedIndex].value;
+
+        map.setZoom(zoomValue);
+    });
 </script>
 
 </body>
