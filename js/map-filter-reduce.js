@@ -36,3 +36,20 @@ const users = [
     }
 ];
 
+let atLeastThreeLangs = users.filter(function (user) {
+    return user.languages.length >= 3;
+})
+
+console.log(atLeastThreeLangs);
+
+let emailAddresses = users.map(function (user) {
+    return user.email;
+});
+
+console.log(emailAddresses);
+
+let nameStringMap = users.map(function (user) {
+    return user.name;
+})
+
+console.log("Your instructors are: " + nameStringMap + ".");
