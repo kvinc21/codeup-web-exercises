@@ -21,11 +21,13 @@
   </ul>
 
   <ul class="food-list"><a>Food options</a>
-      <li class="my-list" id= "Seafood"> seafood</a> </li>
+      <li class="my-list" id= "seafood"> Seafood</a> </li>
       <li class="my-list" id= "fish"> Fish & Peta </a> </li>
       <li class="my-list" id= "chocolate"> Chocolate</a> </li>
   </ul>
 </div>
+
+<p>DONE!!</p>
 
 <script src="js/jquery.js"></script>
 <script>
@@ -34,7 +36,7 @@
 
         alert($('h1').html());
 
-    //
+
         $('.codeup').css('border', 'solid 1px red ');
 
         $('li').css('font-size', '20px');
@@ -45,6 +47,16 @@
                 $(this).css('background-color','#2b6df3')
             });
 
+            $('p').click(function () {
+                $(this).css('font-size', '18px')
+            });
+
+            $('.my-list').hover(function () {
+                $(this).css('color', '#d70c0c')
+            },
+                function () {
+                    $(this).css('color', '#0e0e0e');
+                })
     });
 
 </script>
