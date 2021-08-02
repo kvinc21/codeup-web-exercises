@@ -15,15 +15,15 @@
 
 <div class="row col">
   <ul class="travel-list"><a>Travel Bound </a>
-      <li class="codeup"><a href="#">Malta</a> </li>
-      <li class="codeup"><a href="#">Greece</a> </li>
-      <li class="codeup"><a href="#">Swiss</a> </li>
+      <li class="codeup" id= "Malta">Malta</li>
+      <li class="codeup" id= "Greece">Greece </li>
+      <li class="codeup" id= "Swiss">Swiss</li>
   </ul>
 
   <ul class="food-list"><a>Food options</a>
-      <li class="my-list"><a href="#"> Unsure</a> </li>
-      <li class="my-list"><a href="#"> Fish & Peta </a> </li>
-      <li class="my-list"><a href="#"> Chocolate</a> </li>
+      <li class="my-list" id= "Seafood"> seafood</a> </li>
+      <li class="my-list" id= "fish"> Fish & Peta </a> </li>
+      <li class="my-list" id= "chocolate"> Chocolate</a> </li>
   </ul>
 </div>
 
@@ -32,10 +32,12 @@
     $(document).ready(function() {
         alert( 'The DOM has finished loading!' );
     //
-    //     $('.codeup').css('border', 'solid 1px red ');
-    //
-    //     $('li').css('font-size', '20px');
-    //
+        $('.codeup').css('border', 'solid 1px red ');
+
+        $('li').css('font-size', '20px');
+
+            $('h1, p, li').css('background-color', 'yellow');
+
     });
 
 </script>
