@@ -12,7 +12,6 @@
 <body>
 
 <!-- Main page content -->
-<div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Pizza World</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -75,154 +74,196 @@
                aria-selected="true">
                 <span class="badge badge-pill badge-secondary">3</span> Toppings
             </a>
+        </li>
     </ul>
 
-    <div class="tab-content" id="pizzaTab">
+    <div class="tab-content" id="myTabContent">
         <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="card-header bg-primary text-white">
-                Choose size and crust
-            </div>
-            <div class="card-body">
-                <div class="card mb-3">
-                    <div class="card-header">
-                        Hand Tossed
-                    </div>
-                    <div class="card-body">
-                        Garlic seasoned crust with a rich, buttery taste.
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radioOption" id="small-hand-tossed"
-                                       value="option1">
-                                <label class="form-check-label" for="small-hand-tossed">
-                                    Small (10")
-                                </label>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radioOption" id="medium-hand-tossed"
-                                       value="option1">
-                                <label class="form-check-label" for="medium-hand-tossed">
-                                    Medium (12")
-                                </label>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    Choose size and crust
                 </div>
-                </ul>
-                <div class="card mb-3">
-                    <div class="card-header">
-                        Crispy Thin
-                    </div>
-                    <div class="card-body">
-                        Thin enough for optimum crispy to crunchy ratio
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radioOption"
-                                       id="mediumCrispy"
-                                       value="option1">
-                                <label class="form-check-label" for="MediumCrispy">
-                                    Medium (12")
-                                </label>
-                            </div>
-                        <li class="list-group-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radioOption" id="largeCrispy"
-                                       value="option1">
-                                <label class="form-check-label" for="largeCrispy">
-                                    Large (14")
-                                </label>
-                            </div>
-                            <div class="card-footer d-flex justify-content-end">
-                                <button type="button" class="btn btn-primary">
-                                    <a class="text-white text-decoration-none" data-toggle="tab" href="#profile"
-                                       role="tab">
-                                        Next Step
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                             fill="currentColor"
-                                             class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </a>
-                                </button>
-                            </div>
-
-                            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <div class="card">
-                                    <div class="card-header bg-primary text-white">
-                                        Choose Cheese and Sauce
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card mb-3">
-                                            <div class="card-header">
-                                                Cheese
-                                            </div>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">
-                                                <label for="cheeseAmount" class="font-weight-bold"> How Much?</label>
-                                                    <select class="form-control" id="cheeseAmount">
-                                                    <option>Light</option>
-                                                    <option>Medium</option>
-                                                    <option>Heavy</option>
-                                                    </select>
-                                            </li>
-                                            </ul>
-                                    </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-<!--                            sauce-->
-
-                            <div class="card mb-3">
-                                <div class="card-header">
-                                    Sauce
-                                </div>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <label for="cheeseAmount" class="font-weight-bold"> What Type?</label>
-                                    <select class="form-control" id="sauceType">
-                                        <option>Tomato</option>
-                                        <option>Alfredo</option>
-                                        <option>Pesto</option>
-                                    </select>
-                                </li>
-                            </ul>
+                <div class="card-body">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Hand Tossed
                         </div>
-
+                        <div class="card-body">
+                            Garlic seasoned crust with a rich, buttery taste.
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioOption"
+                                           id="small-hand-tossed"
+                                           value="option1">
+                                    <label class="form-check-label" for="small-hand-tossed">
+                                        Small (10")
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioOption"
+                                           id="medium-hand-tossed"
+                                           value="option1">
+                                    <label class="form-check-label" for="medium-hand-tossed">
+                                        Medium (12")
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                    </ul>
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Crispy Thin
+                        </div>
+                        <div class="card-body">
+                            Thin enough for optimum crispy to crunchy ratio
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioOption"
+                                           id="mediumCrispy"
+                                           value="option1">
+                                    <label class="form-check-label" for="MediumCrispy">
+                                        Medium (12")
+                                    </label>
+                                </div>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioOption" id="largeCrispy"
+                                           value="option1">
+                                    <label class="form-check-label" for="largeCrispy">
+                                        Large (14")
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary">
+                        <a class="text-white text-decoration-none" data-toggle="tab" href="#profile" role="tab">
+                            Next Step
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                    </button>
                 </div>
             </div>
 
-                            <div class="card-footer d-flex justify-content-end">
-                                <button type="button" class="btn btn-primary">
-                                    <a class="text-white text-decoration-none" data-toggle="tab" href="#profile"
-                                       role="tab">
-                                        Next Step
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                             fill="currentColor"
-                                             class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </a>
-                                </button>
+
+            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        Choose Cheese and Sauce
+                    </div>
+                    <div class="card-body">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                Cheese
                             </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <label for="cheeseAmount" class="font-weight-bold"> How Much?</label>
+                                <select class="form-control" id="cheeseAmount">
+                                    <option>Light</option>
+                                    <option>Medium</option>
+                                    <option>Heavy</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+            </div>
+            <!--                            sauce-->
+            <div class="card mb-3">
+                <div class="card-header">
+                    Sauce
+                </div>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <label for="cheeseAmount" class="font-weight-bold"> What Type?</label>
+                    <select class="form-control" id="sauceType">
+                        <option>Tomato</option>
+                        <option>Alfredo</option>
+                        <option>Pesto</option>
+                    </select>
+                </li>
+                <li class="list-group-item">
+                    <label for="sauceAmount" class="font-weight-bold">How Much?</label>
+                    <select class="form-control" id="sauceAmount">
+                        <option>Light</option>
+                        <option selected>Normal</option>
+                        <option>Extra</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+        <button type="button" class="btn btn-primary">
+            <a class="text-white text-decoration-none" data-toggle="tab" href="#profile"
+               role="tab">
+                Next Step
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     fill="currentColor"
+                     class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </a>
+        </button>
+        <button type="button" class="btn btn-primary">
+            <a class="text-white text-decoration-none" data-toggle="tab" href="#contact" role="tab">
+                Next Step
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </a>
+        </button>
+    </div>
+    <div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                Meat
             </div>
         </div>
+
     </div>
+
+    <div class="card-footer d-flex justify-content-end">
+        <div class="btn-group" role="group" aria-label="First group">
+
+            <button type="button" class="btn btn-primary">
+                <a class="text-white text-decoration-none">
+                    Checkout
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </a>
+            </button>
+
+        </div>
+    </div>
+</div>
 
 
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
