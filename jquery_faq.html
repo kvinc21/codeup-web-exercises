@@ -4,20 +4,12 @@
     <meta charset="UTF-8">
     <title> jQuery 10 FAQ</title>
 
-<style>
-    .invisible {
-        visibility: hidden;
-    }
-    .photos {
-        display: flex;
-        justify-content: space-evenly;
-    }
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
 
-    .photo {
-        height: 300px;
-        width:250px
-    }
-</style>
+    </style>
 </head>
 
 <body>
@@ -44,15 +36,56 @@
     <dt>What is the smallest national park?</dt>
     <dd>The smallest national park is Hot Springs National Park in Arkansas, coming in at about 5,500 acres.</dd>
     <dt>What national park has the highest point?</dt>
-    <dd>Mount McKinley in the Alaska Range of Denali National Park is the highest point in the national parks at 20,302 feet</dd>
+    <dd>Mount McKinley in the Alaska Range of Denali National Park is the highest point in the national parks at 20,302
+        feet
+    </dd>
 
 </dl>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
+<button class="toggler"> Visibility Answers</button>
+<button class="toggle"> Highlight Questions</button>
+
+
+<h3 id="national-parks-heading">National Parks</h3>
+<ul id="national-parks">
+    <li>Arches</li>
+    <li>Badlands</li>
+    <li>Carlsbad Caverns</li>
+    <li>Denali</li>
+    <li>Everglades</li>
+</ul>
+
+<h3 id="texas-park">State Parks of Texas</h3>
+<ul id="state-parks-texas">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+    <li>Davis Mountains</li>
+    <li>Enchanted Rock</li>
+</ul>
+
+<h3 id="california-park">California Parks</h3>
+<ul id="state-park-california"></ul>
+    <li>Castle Mountain</li>
+    <li>Cesar E. Chavez</li>
+    <li>Golden Gate</li>
+</ul>
+
+<script src="./js/jquery.js" ></script>
 <script>
     "use strict"
 
     $(document).ready(function () {
+
+        $('dd').addClass('invisible');
+
+        $('.toggler').click(function () {
+            $('dd').toggleClass('invisible')
+        });
+
+        $('.toggle').click(function () {
+            $('dt').css('background-color', 'yellow')
+        });
 
     });
 </script>
